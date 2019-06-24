@@ -58,7 +58,7 @@
                         <a class="btn btn-primary btn-block btn-register" href="#">Clinics</a>
                     </li>
                     <li class="nav-link">
-                        <a class="btn btn-primary btn-block btn-register" href="#">References</a>
+                        <a class="btn btn-primary btn-block btn-register" routerLink="references">References</a>
                     </li>
 
                 </ul>
@@ -79,12 +79,15 @@
                     <a class="btn btn-primary btn-join" href="#">JOIN THE COMMUNITY</a>
 
                 </div>
+
+                
                 <!-- <div class="col-md-12 text-center mt-5">
                     <div class="scroll-down">
                         <a class="btn btn-default btn-scroll floating-arrow" href="#gobottom" id="bottom"><i class="fa fa-angle-down"></i></a>
                     </div>
                 </div> -->
             </div>
+            <router-outlet></router-outlet>
         </div>
     </header>
 
@@ -473,7 +476,7 @@
                 <div class="col-lg-6 text-center text-lg-left my-auto  wow zoomIn">
                     <ul class="list-inline mb-2">
                         <li class="list-inline-item">
-                            <a href="#">Admin</a>
+                            <a routerLink="admin">Admin</a>
                         </li>
                         <li class="list-inline-item">⋅</li>
                         <li class="list-inline-item">

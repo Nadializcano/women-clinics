@@ -18,4 +18,8 @@ export class ClinicService {
     return this.database.object('clinics/' + clinicId);
   }
 
+  addClinic(newClinic: Clinic){
+    this.clinics.push(newClinic);
+  }
+
 }

@@ -18,4 +18,8 @@ export class ReferenceService {
     return this.database.object('refereces/' + referenceId);
   }
 
+  addReference(newReference: Reference){
+    this.references.push(newReference);
+  }
+
 }
