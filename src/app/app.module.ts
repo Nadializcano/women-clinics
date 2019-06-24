@@ -6,6 +6,7 @@ import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { routing } from './app.routing';
+import {SortByRatePipe} from './sortByRate.pipe';
 
 
 import { AppComponent } from './app.component';
@@ -31,6 +32,7 @@ export const firebaseConfig = {
     ClinicDetailComponent,
     ReferencesListComponent,
     ReferenceDetailComponent,
+    SortByRatePipe,
     AboutComponent,
     AdminComponent,
     HomeComponent
