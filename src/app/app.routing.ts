@@ -7,11 +7,12 @@ import { ClinicDetailComponent } from './clinic-detail/clinic-detail.component';
 import { ReferenceDetailComponent } from './reference-detail/reference-detail.component';
 import { AboutComponent } from './about/about.component';
 import { AdminComponent } from './admin/admin.component';
+import { HomeComponent } from './home/home.component';
 
 const appRoutes: Routes = [
     {
         path: '',
-        component: AppComponent
+        component: HomeComponent
     },
     {
         path: 'clinics',
