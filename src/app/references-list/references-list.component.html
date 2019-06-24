@@ -1,3 +1,3 @@
-<p>
-  references-list works!
-</p>
+<ul>
+  <li *ngFor="let reference of references | async" (click)="goToDetailPage(reference)">{{reference.title}}</li>
+</ul>
