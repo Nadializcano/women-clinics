@@ -1,0 +1,173 @@
+{ "clinics": [{
+    "name": "Planned Parenthood - White-West Seattle Health Center",
+    "address": "9942 8th Ave SW, Seattle, WA 98106",
+    "phonenumber": 8007690045,
+    "rate": 4.1,
+    "website": "https://www.plannedparenthood.org/health-center/washington/seattle/98106/white-center---west-seattle-health-center-4161-91810?utm_campaign=white-west-seattle-health-center&utm_medium=organic&utm_source=local-listing",
+    "hours": "Monday	8:30AM–4:30PM
+              Tuesday	11AM–7PM
+              Wednesday	8:30AM–4:30PM
+              Thursday	11AM–7PM
+              Friday	8:30AM–4:30PM
+              Saturday	Closed
+              Sunday	Closed",
+    "id": "1"
+    }, {
+      "name": "Planned Parenthood - Seattle Health Center",
+      "address": "2001 E Madison St, Seattle, WA 98122",
+      "phonenumber":  8007690045,
+      "rate": 3.9,
+      "website": "https://www.plannedparenthood.org/health-center/washington/seattle/98122/seattle-health-center-3309-91810?utm_campaign=seattle-health-center&utm_medium=organic&utm_source=local-listing",
+      "hours": "
+                  Monday	8:30AM–4:30PM
+                  Tuesday	8AM–4PM
+                  Wednesday	8:30AM–4:30PM
+                  Thursday	8AM–7PM
+                  Friday	8:30AM–4:30PM
+                  Saturday	8AM–4PM
+                  Sunday	Closed",
+      "id": "2"
+      }, {
+        "name": "Trust Women Seattle",
+        "address": "1325 4th Ave #1240, Seattle, WA 98101",
+        "phonenumber": 2066250202,
+        "rate": 4.5,
+        "website": "https://trustwomen.org/seattle/",
+        "hours": "Monday	8:30AM–5PM
+                  Tuesday	8:30AM–5PM
+                  Wednesday	8:30AM–5PM
+                  Thursday	8:30AM–5PM
+                  Friday	8:30AM–5PM
+                  Saturday	8:30AM–5PM
+                  Sunday	Closed",
+        "id": "3"
+  },
+  {
+    "name": "Planned Parenthood - Northgate Health Center",
+    "address": "1200 N Northgate Way, Seattle, WA 98133",
+    "phonenumber": 8007690045,
+    "rate": 3.5,
+    "website":"https://www.plannedparenthood.org/health-center/washington/seattle/98133/northgate-health-center-3975-91810",
+    "hours": "Monday	closed
+              Tuesday	11AM–7PM
+              Wednesday	10:30AM–6:30PM
+              Thursday	8:30AM–4:30PM
+              Friday	8:30AM–4:30PM
+              Saturday	8:30AM–4:30PM
+              Sunday	Closed",
+    "id": "4"
+},
+{
+  "name": "Planned Parenthood - First Hill Health Center",
+  "address": "1229 Madison St Suite 1040, Seattle, WA 98104",
+  "phonenumber": 8007690045,
+  "rate": 4.7,
+  "website": "https://www.plannedparenthood.org/health-center/washington/seattle/98104/first-hill-health-center-4069-91810?utm_campaign=first-hill-health-center&utm_medium=organic&utm_source=local-listing" ,
+  "hours": "
+            Monday	Closed
+            Tuesday	8AM–4PM
+            Wednesday	8AM–4PM
+            Thursday	7:30AM–3:30PM
+            Friday	8AM–4PM
+            Saturday	Closed
+            Sunday	Closed",
+  "id": "5"
+},
+{
+  "name": "Swedish HealthCare For Women Clinic",
+  "address": "1101 Madison St Suite 700, Seattle, WA 98104",
+  "phonenumber": 206215-6300,
+  "rate": 5.0,
+  "website":"https://www.swedish.org/services/womens-health" ,
+  "hours": "
+            Monday	8AM–5PM
+            Tuesday	8AM–5PM
+            Wednesday	8AM–5PM
+            Thursday	8AM–5PM
+            Friday	8AM–5PM
+            Saturday	Closed
+            Sunday	Closed",
+  "id": "6"
+},
+{
+  "name": "3W Medical for Women",
+  "address": " 4528 8th Ave NE #1A, Seattle, WA 98105",
+  "phonenumber":  2065880311,
+  "rate": 4.1 ,
+  "website": "https://www.3wmedical.org/",
+  "hours": "Monday	10AM–5PM
+          Tuesday	10AM–5PM
+          Wednesday	10AM–5PM
+          Thursday	10AM–5PM
+          Friday	10AM–5PM
+          Saturday	Closed
+          Sunday	Closed",
+  "id": "7"
+},
+{
+  "name": "Women's Clinic at Harborview",
+  "address": "2420, 325 9th Ave, Seattle, WA 98104",
+  "phonenumber": 2067443367,
+  "rate": 5.0 ,
+  "website": "https://www.uwmedicine.org/locations/womens-harborview?utm_source=google&utm_medium=organic&utm_campaign=local",
+  "hours": "Monday	8:30AM–4:30PM
+          Tuesday	8:30AM–4:30PM
+          Wednesday	8:30AM–4:30PM
+          Thursday	8:30AM–4:30PM
+          Friday	8:30AM–4:30PM
+          Saturday	Closed
+          Sunday	Closed",
+  "id": "8"
+},
+
+{
+  "name": "Northwest Women's Health Care",
+  "address": "1101 Madison St Suite 1150, Seattle, WA 98104",
+  "phonenumber":  2063863400,
+  "rate": 4.7 ,
+  "website": "https://www.nwwomenshealth.com/",
+  "hours": "
+            Monday	7:30AM–5PM
+            Tuesday	7:30AM–5PM
+            Wednesday	7:30AM–5PM
+            Thursday	7:30AM–5PM
+            Friday	7:30AM–5PM
+            Saturday	Closed
+            Sunday	Closed",
+  "id": "9"
+},
+{
+  "name": "Diagnostic & Wellness Center for Women",
+  "address": "1200 12th Ave S, Seattle, WA 98144",
+  "phonenumber":  2065683800,
+  "rate": 4.5 ,
+  "website": "https://www.pacificmedicalcenters.org/where-we-are/women-wellness",
+  "hours": "
+          Monday	7:30AM–5PM
+          Tuesday	7:30AM–5PM
+          Wednesday	7:30AM–5PM
+          Thursday	7:30AM–5PM
+          Friday	7:30AM–5PM
+          Saturday	Closed
+          Sunday	Closed",
+  "id": "10"
+},
+
+{
+  "name": "Seattle Women's: Health, Research, Gynecology",
+  "address": "3216 NE 45th Pl Suite 100, Seattle, WA 98105",
+  "phonenumber": 2065223330,
+  "rate": 5.0 ,
+  "website": "https://www.seattlewomens.com/",
+  "hours": "
+            Monday	8:30AM–5PM
+            Tuesday	8:30AM–5PM
+            Wednesday	8:30AM–5PM
+            Thursday	8:30AM–5PM
+            Friday	8:30AM–5PM
+            Saturday	Closed
+            Sunday	Closed",
+  "id": "11"
+}
+]
+}
