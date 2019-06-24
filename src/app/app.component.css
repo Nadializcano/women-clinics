@@ -532,7 +532,18 @@ li.nav-item a:hover {
     }
 }
 
-footer.footer{padding-top:4rem;padding-bottom:4rem}
+footer.footer{padding-top:1rem;padding-bottom:4rem}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: grey;
+  color: white;
+  text-align: center;
+}
+
 
 li.list-inline-item a {
     color: #fff;

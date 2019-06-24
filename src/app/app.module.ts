@@ -6,6 +6,7 @@ import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { routing } from './app.routing';
+import {SortByRatePipe} from './sortByRate.pipe';
 
 
 import { AppComponent } from './app.component';
@@ -15,6 +16,7 @@ import { ReferencesListComponent } from './references-list/references-list.compo
 import { ReferenceDetailComponent } from './reference-detail/reference-detail.component';
 import { AboutComponent } from './about/about.component';
 import { AdminComponent } from './admin/admin.component';
+import { HomeComponent } from './home/home.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -30,8 +32,10 @@ export const firebaseConfig = {
     ClinicDetailComponent,
     ReferencesListComponent,
     ReferenceDetailComponent,
+    SortByRatePipe,
     AboutComponent,
-    AdminComponent
+    AdminComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

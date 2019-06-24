@@ -4,13 +4,7 @@
     "phonenumber": 8007690045,
     "rate": 4.1,
     "website": "https://www.plannedparenthood.org/health-center/washington/seattle/98106/white-center---west-seattle-health-center-4161-91810?utm_campaign=white-west-seattle-health-center&utm_medium=organic&utm_source=local-listing",
-    "hours": "Monday	8:30AM–4:30PM
-              Tuesday	11AM–7PM
-              Wednesday	8:30AM–4:30PM
-              Thursday	11AM–7PM
-              Friday	8:30AM–4:30PM
-              Saturday	Closed
-              Sunday	Closed",
+
     "id": "1"
     }, {
       "name": "Planned Parenthood - Seattle Health Center",
@@ -18,14 +12,7 @@
       "phonenumber":  8007690045,
       "rate": 3.9,
       "website": "https://www.plannedparenthood.org/health-center/washington/seattle/98122/seattle-health-center-3309-91810?utm_campaign=seattle-health-center&utm_medium=organic&utm_source=local-listing",
-      "hours": "
-                  Monday	8:30AM–4:30PM
-                  Tuesday	8AM–4PM
-                  Wednesday	8:30AM–4:30PM
-                  Thursday	8AM–7PM
-                  Friday	8:30AM–4:30PM
-                  Saturday	8AM–4PM
-                  Sunday	Closed",
+
       "id": "2"
       }, {
         "name": "Trust Women Seattle",
@@ -33,13 +20,7 @@
         "phonenumber": 2066250202,
         "rate": 4.5,
         "website": "https://trustwomen.org/seattle/",
-        "hours": "Monday	8:30AM–5PM
-                  Tuesday	8:30AM–5PM
-                  Wednesday	8:30AM–5PM
-                  Thursday	8:30AM–5PM
-                  Friday	8:30AM–5PM
-                  Saturday	8:30AM–5PM
-                  Sunday	Closed",
+
         "id": "3"
   },
   {

@@ -11,6 +11,7 @@ import { FirebaseListObservable } from 'angularfire2/database'
   providers: [ClinicService]
 })
 export class ClinicListComponent implements OnInit {
+  sortValue: string = "Low-High";
   clinics: FirebaseListObservable<any[]>;
   currentRoute: string = this.router.url;
 
@@ -23,5 +24,10 @@ export class ClinicListComponent implements OnInit {
   goToDetailPage(clickedClinic){
     this.router.navigate(['clinics', clickedClinic.$key])
   }
+
+  onChange(optionMenu) {
+  this.sortValue = optionMenu;
+}
+
 
 }
