@@ -8,6 +8,7 @@ import { ReferenceDetailComponent } from './reference-detail/reference-detail.co
 import { AboutComponent } from './about/about.component';
 import { AdminComponent } from './admin/admin.component';
 import { HomeComponent } from './home/home.component';
+import { BookmarkComponent } from './bookmark/bookmark.component';
 
 const appRoutes: Routes = [
     {
@@ -37,6 +38,10 @@ const appRoutes: Routes = [
     {
         path: 'admin',
         component: AdminComponent
+    },
+    {
+        path: 'bookmark',
+        component: BookmarkComponent
     }
 ];
 
