@@ -17,4 +17,13 @@ export class BookmarkService {
   getClinics(){
     return this.clinics;
   }
+
+  getClinicById(clinicId: string){
+    return this.database.object('bookmarkedClinics/' + clinicId);
+  }
+
+  deleteBookmark(localClinicToDelete){
+    var clinicEntryInFirebase = this.getClinicById(localClinicToDelete.$key);
+    clinicEntryInFirebase.remove().then(_ => console.log("deleted!"));
+  }
 }
