@@ -1,9 +1,9 @@
-<section class="section-container" *ngFor="let clinic of clinics | async | SortByRatePipe:sortValue">
+<section class="section-container">
   <select [(ngModel)]="sortValue" class="dropdown">
     <option value="Low-High">Low-High</option>
     <option value="High-Low">High-Low</option>
   </select>
-
+<div *ngFor="let clinic of clinics | async | SortByRatePipe:sortValue">
   <section class="card">
     <section class="flex-event">
       <section class="sectionimage">
@@ -19,8 +19,9 @@
       <button class="favorite" (click)="addToBookmark(clinic)">Bookmark</button>
     </section>
   </section>
+</div>
 
-  <section class="card">
+  <!-- <section class="card">
     <section class="flex-event">
       <section class="sectionimage">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfNm3NS9VlgwCsrsh6o2TLJ8802JkszGwYz1kPyeAcGqKlgNHu" />
@@ -34,5 +35,5 @@
 
       <button class="favorite">Bookmark</button>
     </section>
-  </section>
+  </section> -->
 </section>
