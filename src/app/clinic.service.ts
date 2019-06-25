@@ -10,7 +10,7 @@ export class ClinicService {
     this.clinics = database.list('clinics');
   }
 
-  getCLinics(){
+  getClinics(){
     return this.clinics;
   }
 
