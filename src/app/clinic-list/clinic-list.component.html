@@ -1,69 +1,38 @@
+<section class="section-container" *ngFor="let clinic of clinics | async | SortByRatePipe:sortValue">
+  <select [(ngModel)]="sortValue" class="dropdown">
+    <option value="Low-High">Low-High</option>
+    <option value="High-Low">High-Low</option>
+  </select>
 
+  <section class="card">
+    <section class="flex-event">
+      <section class="sectionimage">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfNm3NS9VlgwCsrsh6o2TLJ8802JkszGwYz1kPyeAcGqKlgNHu" />
+      </section>
+      <section class="date">
+        <p class="name">{{clinic.name}}</p>
+      </section>
+      <p class="address">{{clinic.address}}</p>
+      <p class="phone_number">{{clinic.phone_number}}</p>
+      <p class="rate">Rate:{{clinic.rate}}</p>
 
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<!------ Include the above in your HEAD tag ---------->
+      <button class="favorite">Bookmark</button>
+    </section>
+  </section>
 
+  <section class="card">
+    <section class="flex-event">
+      <section class="sectionimage">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfNm3NS9VlgwCsrsh6o2TLJ8802JkszGwYz1kPyeAcGqKlgNHu" />
+      </section>
+      <section class="date">
+        <p class="name">{{clinic.name}}</p>
+      </section>
+      <p class="address">{{clinic.address}}</p>
+      <p class="phone_number">{{clinic.phone_number}}</p>
+      <p class="rate">Rate:{{clinic.rate}}</p>
 
-
-
-          <select [(ngModel)]="sortValue">
-            <option value="Low-High">Low-High</option>
-            <option value="High-Low">High-Low</option>
-          </select>
-
-        <div class="row">
-
-            <div *ngFor="let clinic of clinics | async | SortByRatePipe:sortValue" class="col-md-8">
-
-                <div class="firma-card row">
-                    <div class="col-md-5 img-padding-no">
-                        <div class="firma-resim">
-                            <a href="#">
-
-                            </a>
-                        </div>
-                    </div>
-
-                    <div   class="col-md-7">
-
-                        <div class="firma-aciklama card-body">
-                            <h4>{{clinic.name}}</h4>
-                            <ul class="yacht-info__list space-2">
-                            
-                                <li>
-                                    <i class="search-boat-icon fa search-captain vertical-align-mid"></i>
-                                      <font color="black"><i class="fa fa-home"></i>{{clinic.address}}</font>
-
-                                </li>
-                                <li>
-                                    <i class="search-boat-icon fa search-captain vertical-align-mid"></i>
-                                      <font color="black"><i class="fa fa-phone"></i>	{{clinic.phonenumber}}</font>
-                                </li>
-                                <li>
-                                    <i class="search-boat-icon fa search-captain vertical-align-mid"></i>
-                                      <font color="black"><i class="fa fa-star"></i>{{clinic.rate}}</font>
-                                </li>
-                                <li>
-                                    <i class="search-boat-icon fa search-captain vertical-align-mid"></i>
-                                    <font color="black"><i class="fa fa-globe"></i>website</font>
-                                </li>
-                                <li>
-                                    <i class="search-boat-icon fa search-captain vertical-align-mid"></i>
-                                    <font color="black"><i class="fa fa-bookmark"></i>Bookmark</font>
-                                </li>
-
-                            </ul>
-
-
-                        </div>
-                    </div>
-                </div>
-
-
-
-            </div>
-
-        </div>
+      <button class="favorite">Bookmark</button>
+    </section>
+  </section>
+</section>

@@ -2,10 +2,11 @@
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-<section>
-  <div class="project-request">
-    <div class="container">
-      <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+<section class="adminsection">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-5 col-sm-6 col-xs-12">
         <div class="RequestForm">
           <h2>Add a Clinic</h2>
           <div class="Forms">
@@ -34,7 +35,9 @@
           </div>
         </div>
       </div>
-      <div class='col-lg-5 col-md-5 col-sm-5 col-xs-12'>
+
+
+      <div class='col-lg-6 col-md-5 col-sm-6 col-xs-12'>
         <div class="RequestForm">
           <h2>Add a Reference Article</h2>
           <div class="Forms">
@@ -54,11 +57,17 @@
               <div class="form-group">
                 <input class="form-control" placeholder="Published Date" type="date" #publishedDate>
               </div>
-              <button (click)="submitArticle(articleTitle.value, articleDescription.value, articleWebsite.value, article.value, publishedDate.value); articleTitle.value=''; articleDescription.value=''; articleWebsite.value=''; article.value=''; publishedDate.value=''">ADD CLINIC</button>
+              <button
+                (click)="submitArticle(articleTitle.value, articleDescription.value, articleWebsite.value, article.value, publishedDate.value); articleTitle.value=''; articleDescription.value=''; articleWebsite.value=''; article.value=''; publishedDate.value=''">ADD
+                CLINIC</button>
             </form>
           </div>
         </div>
       </div>
     </div>
+
   </div>
+</section>
+
+<section id="placeholder-big">
 </section>
