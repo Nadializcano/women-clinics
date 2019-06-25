@@ -1,25 +1,37 @@
 <section class="section-container">
-  <select [(ngModel)]="sortValue" class="dropdown">
-    <option value="Low-High">Low-High</option>
-    <option value="High-Low">High-Low</option>
-  </select>
-<div *ngFor="let clinic of clinics | async | SortByRatePipe:sortValue">
-  <section class="card">
-    <section class="flex-event">
-      <section class="sectionimage">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfNm3NS9VlgwCsrsh6o2TLJ8802JkszGwYz1kPyeAcGqKlgNHu" />
-      </section>
-      <section class="date">
-        <p class="name">{{clinic.name}}</p>
-      </section>
-      <p class="address">{{clinic.address}}</p>
-      <p class="phone_number">{{clinic.phone_number}}</p>
-      <p class="rate">Rate:{{clinic.rate}}</p>
 
-      <button class="favorite" (click)="addToBookmark(clinic)">Bookmark</button>
-    </section>
-  </section>
-</div>
+
+<select [(ngModel)]="sortValue" class="dropdown">
+  <option value="Low-High">Low-High</option>
+  <option value="High-Low">High-Low</option>
+</select>
+
+ <div class="container">
+<div  *ngFor="let clinic of clinics | async | SortByRatePipe:sortValue" class="row">
+        <div class="col-md-7">
+          <a href="#">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="https://www.schn.health.nsw.gov.au/files/styles/header/public/images/headers/childrenscourtclinicparrweb.jpg?itok=-xl_OW9s" alt="">
+          </a>
+        </div>
+        <div class="col-md-5">
+          <strong><h4 (click)="goToDetailPage(clinic)">{{clinic.name}}</h4></strong>
+<li><i class="fa fa-home"></i>{{clinic.address}}</li>
+
+    <li><i class="fa fa-home"></i>{{clinic.phonenumber}}<li>
+
+<li><i class="fa fa-home"></i>{{clinic.rate}}</li>
+
+<li><i class="fa fa-home"></i>website</li>
+<br>
+
+          <button class="favorite" (click)="addToBookmark(clinic)">Bookmark</button>
+        </div>
+
+      </div>
+
+    </div>
+
+
 
   <!-- <section class="card">
     <section class="flex-event">

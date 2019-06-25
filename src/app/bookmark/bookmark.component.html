@@ -1,6 +1,30 @@
-<ul>
-  <li *ngFor="let clinic of clinics | async">
-    {{clinic.name}}
-    <button (click)="beginDeletingClinic(clinic)">Remove Bookmark</button>
-  </li>
-</ul>
+
+
+
+<div class="container">
+
+
+  <div *ngFor="let clinic of clinics | async" class="row">
+    <div class="col-md-7">
+      <a href="#">
+        <img class="img-fluid rounded mb-3 mb-md-0" src="https://www.schn.health.nsw.gov.au/files/styles/header/public/images/headers/childrenscourtclinicparrweb.jpg?itok=-xl_OW9s" alt="">
+      </a>
+    </div>
+    <div class="col-md-5">
+  <strong>  <h5>{{clinic.name}}</h5> </strong>
+      <i class="fa fa-home"></i>{{clinic.address}}<br>
+        <i class="fa fa-star"></i>{{clinic.rate}}<br>
+        <i class="fa fa-phone"></i>  {{clinic.phonenumber}}<br>
+        <i class="fa fa-globe"></i>  website <br>
+
+    <button class="favorite"(click)="beginDeletingClinic(clinic)">Remove</button>
+    </div>
+
+  </div>
+
+
+<br>
+
+
+
+  </div>
