@@ -126,3 +126,11 @@ i:hover {
 .dropdown:hover {
     background-color: rgb(247, 183, 51);
 }
+
+.row {
+  padding-bottom: 35px;
+
+}
+li:not(:last-child) {
+    margin-bottom: 0px;
+}

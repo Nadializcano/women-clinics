@@ -1,3 +1,7 @@
-<p>
-  clinic-detail works!
-</p>
+<div>
+
+  <h3>{{(clinicToDisplay | async)?.name}}</h3>
+  <h4>{{(clinicToDisplay| async)?.address}}</h4>
+  <p>{{(clinicToDisplay| async)?.phonenumber}}</p>
+  <p>{{(clinicToDisplay| async)?.rate}}</p>
+</div>
