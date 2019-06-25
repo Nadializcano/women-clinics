@@ -8,6 +8,8 @@ import { ReferenceDetailComponent } from './reference-detail/reference-detail.co
 import { AboutComponent } from './about/about.component';
 import { AdminComponent } from './admin/admin.component';
 import { HomeComponent } from './home/home.component';
+import { PublicComponent } from './public/public.component';
+import { PrivateComponent } from './private/private.component';
 
 const appRoutes: Routes = [
     {
@@ -37,7 +39,17 @@ const appRoutes: Routes = [
     {
         path: 'admin',
         component: AdminComponent
-    }
+    },
+    {
+  path: 'public',
+  component: PublicComponent
+},
+
+{
+  path: 'private',
+  component: PrivateComponent
+}
+
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);

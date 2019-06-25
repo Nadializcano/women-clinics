@@ -7,6 +7,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { routing } from './app.routing';
 import {SortByRatePipe} from './sortByRate.pipe';
+import { AngularFireAuthModule } from 'angularfire2/auth';
 
 
 import { AppComponent } from './app.component';
@@ -17,13 +18,17 @@ import { ReferenceDetailComponent } from './reference-detail/reference-detail.co
 import { AboutComponent } from './about/about.component';
 import { AdminComponent } from './admin/admin.component';
 import { HomeComponent } from './home/home.component';
+import { PublicComponent } from './public/public.component';
+import { PrivateComponent } from './private/private.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
   authDomain: masterFirebaseConfig.authDomain,
   databaseURL: masterFirebaseConfig.databaseURL,
-  storageBucket: masterFirebaseConfig.storageBucket
+  storageBucket: masterFirebaseConfig.storageBucket,
+  messagingSenderId: masterFirebaseConfig.messagingSenderId
 };
+
 
 @NgModule({
   declarations: [
@@ -35,7 +40,9 @@ export const firebaseConfig = {
     SortByRatePipe,
     AboutComponent,
     AdminComponent,
-    HomeComponent
+    HomeComponent,
+    PublicComponent,
+    PrivateComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +50,8 @@ export const firebaseConfig = {
     HttpModule,
     routing,
     AngularFireModule.initializeApp(firebaseConfig),
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    AngularFireAuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]
