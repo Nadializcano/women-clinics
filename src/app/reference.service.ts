@@ -15,7 +15,7 @@ export class ReferenceService {
   }
 
   getReferenceById(referenceId: string){
-    return this.database.object('refereces/' + referenceId);
+    return this.database.object('references/' + referenceId);
   }
 
   addReference(newReference: Reference){
