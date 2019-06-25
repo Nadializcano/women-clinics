@@ -40,12 +40,12 @@
           <a class="btn btn-primary btn-block btn-register" routerLink="bookmark">Bookmark</a>
         <li *ngIf="isLoggedIn" class="nav-link">
 
-          <a  (click)="logout()"class="btn btn-primary btn-block btn-register" routerLink="references">Log Out</a>
+          <a  (click)="logout()"class="btn btn-primary btn-block btn-register">Log Out</a>
                 <a>{{userName}}</a>
         </li>
         <li *ngIf="!isLoggedIn" class="nav-link">
 
-          <a  (click)="login()"class="btn btn-primary btn-block btn-register" routerLink="references">Log In</a>
+          <a  (click)="login()"class="btn btn-primary btn-block btn-register">Log In</a>
         </li>
 
       </ul>

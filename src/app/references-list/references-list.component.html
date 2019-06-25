@@ -1,3 +1,24 @@
-<ul>
-  <li *ngFor="let reference of references | async" (click)="goToDetailPage(reference)">{{reference.title}}</li>
-</ul>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<div class="container">
+	<div class="row">
+		<div class="col-lg-8 col-md-6 col-sm-9 col-xs-12">
+		    <article>
+		        <div class="row">
+		            <div id="reference" class="col-sm-1 col-md-11" *ngFor="let reference of references | async">
+		                <h4>{{reference.title}}</h4>
+		                <p>{{reference.description}}</p>
+		                <section>
+		                    <i class="glyphicon glyphicon-folder-open"></i><a href="{{reference.website}}">Website</a>
+		                    <i class="glyphicon glyphicon-calendar"></i>{{reference.published}}
+		                    <i class="glyphicon glyphicon-eye-open"></i>10000
+		                    <a (click)="goToDetailPage(reference)" class="btn btn-default btn-sm pull-right">More ... </a>
+		                </section>
+		            </div>
+		        </div>
+        </article>
+      </div>
+    </div>
+</div>

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ReferenceService } from '../reference.service';
 import { ActivatedRoute, Params } from '@angular/router';
+import { FirebaseObjectObservable } from 'angularfire2/database';
 import { Location } from '@angular/common';
 
 @Component({
