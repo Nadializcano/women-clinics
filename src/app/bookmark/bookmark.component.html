@@ -1,5 +1,6 @@
 <ul>
   <li *ngFor="let clinic of clinics | async">
     {{clinic.name}}
+    <button (click)="beginDeletingClinic(clinic)">Remove Bookmark</button>
   </li>
 </ul>
