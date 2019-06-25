@@ -92,17 +92,18 @@ i:hover {
     width: 15%;
     height: 45px;
     margin: 0 15px 0 5px;
-    background-color: rgb(236, 91, 51);
+    background-color:  #c44569;
     transition-duration: 0.8s;
     color: white;
     border-radius: 100px;
     border: none;
     padding: 0 10px;
-    box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 5px 1px grey;
+
 }
 
 .favorite:hover {
-    background-color: rgb(247, 183, 51);
+    background-color: grey;
 }
 
 
@@ -111,26 +112,29 @@ i:hover {
     text-transform: uppercase;
     font-size: 14px;
     min-width: 100px;
-    width: 15%;
+    width: 10%;
     height: 45px;
-    margin: 0px 0px 0px 0px;
-    background-color: rgb(236, 91, 51);
+    margin: 50px 100px 50px 0px;
+    background-color:  #c44569;
     transition-duration: 0.8s;
     color: white;
     border-radius: 20px;
     border: none;
     padding: 0 10px;
     box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.3);
+
+
+
 }
 
 .dropdown:hover {
-    background-color: rgb(247, 183, 51);
+    background-color: grey;
 }
 
 .row {
   padding-bottom: 35px;
 
 }
-li:not(:last-child) {
-    margin-bottom: 0px;
+li {
+  list-style-type: none;
 }

@@ -1,0 +1,47 @@
+body {
+  padding: 10em 50em;
+  font: normal 40px/50px Arial, sans-serif;
+  color: #999;
+    margin: 0 auto;
+}
+p {
+  height: 500px;
+  float: left;
+  margin-right: 0.3em;
+  margin: 0 auto 0;
+  width: 700px;
+  font-size: 100px;
+  padding-left: 400px;
+  color: white;
+  margin-top: 150px;
+
+}
+b {
+  float: left;
+  overflow: hidden;
+  position: relative;
+  height: 75px;
+  font-size: 50px;
+  margin-top: 190px;
+
+}
+#ins {
+ display: inline-block;
+color: #c44569 ;
+position: relative;
+white-space: nowrap;
+top: 0;
+left: 20;
+-webkit-animation: move 6s;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-delay: 2s;
+  margin: 0 auto;
+}
+
+@keyframes move {
+0%  { top: 0px; }
+20% { top: -65px; }
+40% { top: -65px; }
+60% { top: -132px; }
+80% { top: -210px; }
+}
