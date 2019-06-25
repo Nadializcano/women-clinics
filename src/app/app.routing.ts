@@ -9,6 +9,8 @@ import { AboutComponent } from './about/about.component';
 import { AdminComponent } from './admin/admin.component';
 import { HomeComponent } from './home/home.component';
 import { BookmarkComponent } from './bookmark/bookmark.component';
+import { PublicComponent } from './public/public.component';
+import { PrivateComponent } from './private/private.component';
 
 const appRoutes: Routes = [
     {
@@ -42,6 +44,14 @@ const appRoutes: Routes = [
     {
         path: 'bookmark',
         component: BookmarkComponent
+    },
+    {   
+        path: 'public',
+        component: PublicComponent
+    },
+    {
+        path: 'private',
+        component: PrivateComponent
     }
 ];
 

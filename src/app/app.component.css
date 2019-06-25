@@ -139,8 +139,8 @@ a.btn.btn-default.btn-scroll {
 
 .btn-login {
     width: 138px;
-    background: #1fc6d8 !important;
-    border: 1px solid #1fc6d8 !important;
+    background: #c44569!important;
+    border: 1px solid #c44569 !important;
 }
 .btn-login:hover{
        background: #3683a1 !important;
@@ -164,18 +164,18 @@ p.myp-slider.text-center {
 
 .btn-register {
     width: 138px;
-    background: #1fc6d8 !important;
-    border: 1px solid #1fc6d8 !important;
+    background: #c44569 !important;
+    border: 1px solid #c44569 !important;
 }
 
 
 .btn-register:hover{
-       background: #3683a1 !important;
+       background: grey !important;
     border: 1px solid #1fc6d8 !important;
 }
 
 .btn-join {
-    background: #1fc6d8 !important;
+    background: red!important;
     border: 1px solid #1fc6d8 !important;
 }
 
@@ -236,7 +236,7 @@ a.btn.btn-circle.my-social-btn {
     left: 0;
 }
 span.bg-main {
-    color: #008ba3;
+    color: #c44569;
 }
 
 hr.my-border {
