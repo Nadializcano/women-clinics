@@ -1,9 +1,9 @@
 export const masterFirebaseConfig = {
-  apiKey: "AIzaSyCWnfDruec_ptXE6TpyV1kGAKGPSFAcKq8",
-  authDomain: "womenclinics-c7822.firebaseapp.com",
-  databaseURL: "https://womenclinics-c7822.firebaseio.com",
-  projectId: "womenclinics-c7822",
-  storageBucket: "womenclinics-c7822.appspot.com",
-  messagingSenderId: "548007725339",
-  appId: "1:548007725339:web:90c0e0e47747018d"
+  apiKey: "AIzaSyDhfWyGiecuWemNWnDSc7kXrE9zmJuoyBM",
+  authDomain: "womens-clinic-app.firebaseapp.com",
+  databaseURL: "https://womens-clinic-app.firebaseio.com",
+  projectId: "womens-clinic-app",
+  storageBucket: "",
+  messagingSenderId: "382832364304",
+  appId: "1:382832364304:web:8c453cf14a415b00"
 };
