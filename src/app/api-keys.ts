@@ -1,5 +1,3 @@
-
-
 export const masterFirebaseConfig = {
   apiKey: "AIzaSyCWnfDruec_ptXE6TpyV1kGAKGPSFAcKq8",
   authDomain: "womenclinics-c7822.firebaseapp.com",

@@ -11,18 +11,6 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
 <nav class="navbar navbar-default">
   <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" routerLink="">Authentication Example</a>
-    </div>
-    <ul class="nav navbar-nav navbar-right">
-          <li *ngIf="isLoggedIn">
-            <a>{{userName}}</a>
-            <a (click)="logout()">Log out</a>
-          </li>
-          <li *ngIf="!isLoggedIn">
-            <a (click)="login()">Log in</a>
-          </li>
-        </ul>
   </div>
 </nav>
 <body>
@@ -50,6 +38,14 @@
         </li>
         <li class="nav-link">
           <a class="btn btn-primary btn-block btn-register" routerLink="bookmark">Bookmark</a>
+        <li *ngIf="isLoggedIn" class="nav-link">
+
+          <a  (click)="logout()"class="btn btn-primary btn-block btn-register" routerLink="references">Log Out</a>
+                <a>{{userName}}</a>
+        </li>
+        <li *ngIf="!isLoggedIn" class="nav-link">
+
+          <a  (click)="login()"class="btn btn-primary btn-block btn-register" routerLink="references">Log In</a>
         </li>
 
       </ul>
