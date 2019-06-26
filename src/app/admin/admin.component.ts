@@ -18,7 +18,7 @@ export class AdminComponent implements OnInit {
   }
 
   submitClinic(name: string, address: string, phonenumber: string, rate: string, website: string, hours:string){
-    var newClinic: Clinic = new Clinic(name, address, parseInt(phonenumber), parseInt(rate), website, hours);
+    var newClinic: Clinic = new Clinic(name, address, parseInt(phonenumber), parseInt(rate), website, hours,this.imageSrc);
     this.clinicService.addClinic(newClinic);
   }
 
@@ -26,5 +26,24 @@ export class AdminComponent implements OnInit {
     var newReference: Reference = new Reference(title, description, website, article, published);
     this.referenceService.addReference(newReference);
   }
+
+  private imageSrc: string = '';
+
+handleInputChange(e) {
+  var file = e.dataTransfer ? e.dataTransfer.files[0] : e.target.files[0];
+  var pattern = /image-*/;
+  var reader = new FileReader();
+  if (!file.type.match(pattern)) {
+    alert('invalid format');
+    return;
+  }
+  reader.onload = this._handleReaderLoaded.bind(this);
+  reader.readAsDataURL(file);
+}
+_handleReaderLoaded(e) {
+  let reader = e.target;
+  this.imageSrc = reader.result;
+  console.log(this.imageSrc)
+}
 
 }

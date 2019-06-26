@@ -10,7 +10,7 @@
 <div  *ngFor="let clinic of clinics | async | SortByRatePipe:sortValue" class="row">
         <div class="col-md-7">
           <a href="#">
-            <img class="img-fluid rounded mb-3 mb-md-0" src="https://www.schn.health.nsw.gov.au/files/styles/header/public/images/headers/childrenscourtclinicparrweb.jpg?itok=-xl_OW9s" alt="">
+            <img width="700" height="300"class="img-fluid rounded mb-3 mb-md-0" src="{{clinic.imageSrc}}" alt="">
           </a>
         </div>
         <div class="col-md-5">

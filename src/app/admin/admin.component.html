@@ -29,6 +29,10 @@
               <div class="form-group">
                 <textarea class="form-control" placeholder="Clinic Hours" rows="5" #clinicHours></textarea>
               </div>
+              <div class="image-upload">
+    <img [src]="imageSrc" style="max-width:300px;max-height:300px"/>
+    <input name="imageUrl" type="file" accept="image/*" (change)="handleInputChange($event)" />
+</div> 
               <button (click)="submitClinic(clinicName.value, clinicAddress.value, clinicPhone.value, clinicRating.value, clinicWebsite.value, clinicHours.value); clinicName.value=''; clinicAddress.value=''; clinicPhone.value=''; clinicRating.value=''; clinicRating.value=''; clinicWebsite.value='';
            clinicHours.value=''">ADD CLINIC</button>
             </form>

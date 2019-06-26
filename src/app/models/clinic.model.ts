@@ -4,5 +4,6 @@ export class Clinic {
   public phonenumber: number,
   public rate: number,
   public website: string,
-  public hours: string) {}
+  public hours: string,
+public imageSrc: string) {}
 }
