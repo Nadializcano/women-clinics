@@ -19,4 +19,13 @@ export class ForumService {
     return this.posts;
   }
 
+  getPostById(postId: string){
+    return this.database.object('posts/' + postId);
+  }
+
+  deletePost(postToDelete){
+    var postEntryInFirebase = this.getPostById(postToDelete.$key);
+    postEntryInFirebase.remove().then(_ => console.log("deleted!"));
+  }
+
 }

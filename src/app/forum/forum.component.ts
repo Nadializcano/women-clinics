@@ -23,5 +23,10 @@ export class ForumComponent implements OnInit {
     this.forumService.addToForum(newPost);
   }
 
+  beginToDelete(postToDelete: Post){
+    if(confirm("Are you sure you want to delete this bookmark?")){
+      this.forumService.deletePost(postToDelete);
+    }
+  }
 
 }
