@@ -21,6 +21,7 @@ import { HomeComponent } from './home/home.component';
 import { BookmarkComponent } from './bookmark/bookmark.component';
 import { PublicComponent } from './public/public.component';
 import { PrivateComponent } from './private/private.component';
+import { ForumComponent } from './forum/forum.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -44,7 +45,8 @@ export const firebaseConfig = {
     HomeComponent,
     BookmarkComponent,
     PublicComponent,
-    PrivateComponent
+    PrivateComponent,
+    ForumComponent
   ],
   imports: [
     BrowserModule,
