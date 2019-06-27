@@ -20,6 +20,25 @@
        $("#buttonclick").slideDown();
         $("#showform").slideUp();
      });
+
+     $("#buttonclickShowClinics").click(function(){
+       $(".bookmarkedClinics").slideDown();
+       $("#buttonclickShowClinics").slideUp();
+          $(".bookmarkedRef").slideUp();
+           $("#buttonclickShowRef").slideDown();
+
+
+
+     });
+
+     $("#buttonclickShowRef").click(function(){
+       $(".bookmarkedRef").slideDown();
+       $("#buttonclickShowRef").slideUp();
+        $(".bookmarkedClinics").slideUp();
+           $("#buttonclickShowClinics").slideDown();
+
+
+     });
    });
    </script>
 
