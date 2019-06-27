@@ -4,9 +4,9 @@ import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/databa
 
 @Injectable()
 export class ReferenceService {
-  references: FirebaseListObservable<any[]>;
+  references: FirebaseListObservable<any[]>
 
-  constructor(private database: AngularFireDatabase) { 
+  constructor(private database: AngularFireDatabase) {
     this.references = database.list('references');
   }
 
@@ -21,5 +21,15 @@ export class ReferenceService {
   addReference(newReference: Reference){
     this.references.push(newReference);
   }
+
+  addToBookmarkedRef(newreference: Reference){
+    this.references.push(newreference);
+    alert(newreference);
+
+  }
+
+
+
+
 
 }

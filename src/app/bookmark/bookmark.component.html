@@ -3,6 +3,12 @@
 
 <div class="container">
 
+  <button id="buttonclickShowClinics"ng-click= "showme=true" type="button" class="btn btn-primary btn-lg btn-block">Show clinics</button> <br>
+
+    <button id="buttonclickShowRef"ng-click= "showme=false" type="button" class="btn btn-primary btn-lg btn-block">Show References</button> <br>
+<div class="bookmarkedClinics">
+
+
 
   <div *ngFor="let clinic of clinics | async" class="row">
     <div class="col-md-7">
@@ -19,12 +25,18 @@
 
     <button class="favorite"(click)="beginDeletingClinic(clinic)">Remove</button>
     </div>
-
+</div>
   </div>
+
+  <div class="bookmarkedRef">
+
+  <div *ngFor="let reference of references | async" class="row">
+  {{reference.title}}
+
+
+</div>
+  </div>
+
 
 
 <br>
-
-
-
-  </div>

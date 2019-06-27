@@ -24,4 +24,10 @@ export class ReferencesListComponent implements OnInit {
     this.router.navigate(['references', clickedReference.$key])
   }
 
+  addToBookmarkedRef(newreference: Reference){
+    this.referenceService.addToBookmarkedRef(newreference);
+  }
+
+
+
 }
