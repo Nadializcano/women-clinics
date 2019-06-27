@@ -42,6 +42,10 @@
     padding-left: 0;
 }
 
+#showform{
+  display: none;
+}
+
 #wrapper[_ngcontent-c1] .dd-header[_ngcontent-c1] {
     margin: 1px 1px 1px 0;
     padding: 0;

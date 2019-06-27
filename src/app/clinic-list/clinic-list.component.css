@@ -18,6 +18,11 @@
     font-size: 13px;
     transition: 0.3s;
 }
+a {
+color: black;
+  cursor: pointer;
+}
+
 
 .card {
     background-color: #f2f3f8;
