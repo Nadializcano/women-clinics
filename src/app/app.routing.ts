@@ -11,6 +11,7 @@ import { HomeComponent } from './home/home.component';
 import { BookmarkComponent } from './bookmark/bookmark.component';
 import { PublicComponent } from './public/public.component';
 import { PrivateComponent } from './private/private.component';
+import { AdminAuthGuardService } from './admin-auth-guard.service';
 import { ForumComponent} from './forum/forum.component';
 
 const appRoutes: Routes = [
@@ -40,7 +41,8 @@ const appRoutes: Routes = [
     },
     {
         path: 'admin',
-        component: AdminComponent
+        component: AdminComponent,
+        canActivate: [AdminAuthGuardService]
     },
     {
         path: 'bookmark',

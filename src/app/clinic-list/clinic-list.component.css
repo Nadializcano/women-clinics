@@ -143,3 +143,8 @@ i:hover {
 li {
   list-style-type: none;
 }
+
+a {
+    color: black;
+    cursor: pointer;
+}
