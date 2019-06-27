@@ -6,8 +6,8 @@
   <option value="High-Low">High-Low</option>
 </select>
 
- <div class="container">
-<div  *ngFor="let clinic of clinics | async | SortByRatePipe:sortValue" class="row">
+<div class="container">
+  <div  *ngFor="let clinic of clinics | async | SortByRatePipe:sortValue" class="row">
         <div class="col-md-7">
           <a href="#">
             <img width="700" height="300"class="img-fluid rounded mb-3 mb-md-0" src="{{clinic.imageSrc}}" alt="">
@@ -25,11 +25,12 @@
 <br>
 
           <button class="favorite" (click)="addToBookmark(clinic)">Bookmark</button>
+          <button *ngIf="adminUser" class="favorite" (click)="goToEdit(clinic)">Edit</button>
         </div>
 
-      </div>
+  </div>
 
-    </div>
+</div>
 
 
 

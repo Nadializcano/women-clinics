@@ -13,6 +13,7 @@ import { PublicComponent } from './public/public.component';
 import { PrivateComponent } from './private/private.component';
 import { AdminAuthGuardService } from './admin-auth-guard.service';
 import { ForumComponent} from './forum/forum.component';
+import { EditClinicComponent } from './edit-clinic/edit-clinic.component';
 
 const appRoutes: Routes = [
     {
@@ -59,6 +60,11 @@ const appRoutes: Routes = [
     {
         path: 'forum',
         component: ForumComponent
+    },
+    {
+        path: 'edit-clinic/:id',
+        component: EditClinicComponent,
+        canActivate: [AdminAuthGuardService]
     }
 
 ];

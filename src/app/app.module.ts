@@ -25,6 +25,7 @@ import { AdminAuthGuardService } from './admin-auth-guard.service';
 import { AuthenticationService } from './authentication.service';
 import { UserService } from './user.service';
 import { ForumComponent } from './forum/forum.component';
+import { EditClinicComponent } from './edit-clinic/edit-clinic.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -49,7 +50,8 @@ export const firebaseConfig = {
     BookmarkComponent,
     PublicComponent,
     PrivateComponent,
-    ForumComponent
+    ForumComponent,
+    EditClinicComponent
   ],
   imports: [
     BrowserModule,
