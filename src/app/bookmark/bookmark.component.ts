@@ -2,20 +2,23 @@ import { Component, OnInit } from '@angular/core';
 import { BookmarkService } from '../bookmark.service';
 import { FirebaseListObservable } from 'angularfire2/database';
 import { Clinic } from '../models/clinic.model';
+import { ReferenceService } from '../reference.service';
 
 @Component({
   selector: 'app-bookmark',
   templateUrl: './bookmark.component.html',
   styleUrls: ['./bookmark.component.css'],
-  providers: [BookmarkService]
+  providers: [BookmarkService,ReferenceService]
 })
 export class BookmarkComponent implements OnInit {
   clinics: FirebaseListObservable<any[]>;
+  references: FirebaseListObservable<any[]>;
 
-  constructor(private bookmarkService: BookmarkService) { }
+  constructor(private bookmarkService: BookmarkService, private referenceService: ReferenceService) { }
 
   ngOnInit() {
     this.clinics = this.bookmarkService.getClinics();
+    this.references = this.referenceService.getReferences();
   }
 
   beginDeletingClinic(clinicToDelete: Clinic){
