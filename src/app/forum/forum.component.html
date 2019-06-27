@@ -12,17 +12,17 @@
 
                     <!--Form with header-->
 
-<div ng-hidde="button">
-
-
-										<button ng-click= "showme=true" type="button" class="btn btn-primary btn-lg btn-block">New Post</button>
-</div>
-										<div ng-show="showme">
 
 
 
+										<button id="buttonclick"ng-click= "showme=true" type="button" class="btn btn-primary btn-lg btn-block">New Post</button> <br>
 
-                     <form action="mail.php" method="post">
+										<div id="showform" ng-show="showme">
+
+
+
+
+                     <form action="mail.php" method="post"  >
                         <div class="card border-primary rounded-0">
                             <div class="card-header p-0">
                                 <div class="bg-info text-white text-center py-2">
@@ -56,7 +56,7 @@
 
 
                                 <div class="text-center">
-                                 <input ng-click= "showme=false" (click)="submitPost(postTitle.value, postContent.value)" type="submit" value="Add" class="btn btn-info btn-block rounded-0 py-2">
+                                 <input id="addbutton"ng-click= "showme=false" (click)="submitPost(postTitle.value, postContent.value)" type="submit" value="Add" class="btn btn-info btn-block rounded-0 py-2">
                                 </div>
                             </div>
 
@@ -64,6 +64,7 @@
 
 													</div>
                     </form>
+										<br>
 
 										</div>
 
@@ -71,7 +72,7 @@
 
 											<ul *ngFor="let post of posts | async"class="dd-header">
 									        <li>
-									            <div >
+									            <div id="postdisplay">
 
 									                  <i (click)="beginToDelete(post)" class="icon-trash"></i>
 									                  <div  class="dd-content">
