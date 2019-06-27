@@ -14,10 +14,11 @@
 		                    <i class="glyphicon glyphicon-folder-open"></i><a href="{{reference.website}}">Website</a>
 		                    <i class="glyphicon glyphicon-calendar"></i>{{reference.published}}
 		                    <i class="glyphicon glyphicon-eye-open"></i>10000
+												<i (click)="addToBookmarkedRef(reference)" class="glyphicon glyphicon-star"></i>Bookmark
 
 		                    <a (click)="goToDetailPage(reference)" class="btn btn-default btn-sm pull-right">More ... </a>
 		                </section>
-											<button (click)="addToBookmarkedRef(reference)">Bookmark</button>
+											
 		            </div>
 		        </div>
         </article>

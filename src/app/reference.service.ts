@@ -24,7 +24,7 @@ export class ReferenceService {
 
   addToBookmarkedRef(newreference: Reference){
     this.references.push(newreference);
-    alert(newreference);
+
 
   }
 

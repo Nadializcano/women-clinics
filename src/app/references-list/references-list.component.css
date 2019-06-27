@@ -30,3 +30,19 @@ a {
 h4 {
     font-weight: bolder;
 }
+
+
+.btn-default {
+    color: #ffff;
+    background-color:  #c44569;
+    border-color:  #c44569;
+    text-color: white;
+
+}
+
+
+body[_ngcontent-c0] {
+    font-family: 'Open Sans', sans-serif !important;
+    background: #E4A6BD;
+    color: red;
+}
