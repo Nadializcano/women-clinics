@@ -70,7 +70,7 @@
 
         <div class="col-lg-6 text-center text-lg-left my-auto  wow zoomIn">
           <ul class="list-inline mb-2">
-            <li class="list-inline-item">
+            <li *ngIf="adminUser" class="list-inline-item">
               <a routerLink="admin">Admin</a>
             </li>
             <li class="list-inline-item">⋅</li>

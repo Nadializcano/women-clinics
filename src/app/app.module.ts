@@ -21,6 +21,9 @@ import { HomeComponent } from './home/home.component';
 import { BookmarkComponent } from './bookmark/bookmark.component';
 import { PublicComponent } from './public/public.component';
 import { PrivateComponent } from './private/private.component';
+import { AdminAuthGuardService } from './admin-auth-guard.service';
+import { AuthenticationService } from './authentication.service';
+import { UserService } from './user.service';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -55,7 +58,11 @@ export const firebaseConfig = {
     AngularFireDatabaseModule,
     AngularFireAuthModule
   ],
-  providers: [],
+  providers: [
+    AdminAuthGuardService,
+    AuthenticationService,
+    UserService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
