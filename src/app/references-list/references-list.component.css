@@ -1,6 +1,6 @@
 article{
     background-color: rgb(145, 134, 134);
-    padding: 10px;
+    padding: 30px;
     margin-bottom: 10px;
     margin-top: 10px;
     padding-left: 10%;
@@ -19,7 +19,7 @@ figure img{
 
 a {
     color: black;
-    cursor: pointer; 
+    cursor: pointer;
 }
 
 #reference{
@@ -28,5 +28,5 @@ a {
 }
 
 h4 {
-    font-weight: bolder;  
+    font-weight: bolder;
 }

@@ -7,8 +7,24 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+     <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+   <script>
+   $(document).ready(function(){
+     $("#buttonclick").click(function(){
+       $("#buttonclick").slideUp();
+        $("#showform").slideDown();
+     });
+
+     $("#addbutton").click(function(){
+       $("#buttonclick").slideDown();
+        $("#showform").slideUp();
+     });
+   });
+   </script>
+
 </head>
-<body>
+<body ng-app="">
   <app-root></app-root>
 </body>
 </html>

@@ -10,18 +10,22 @@
 <div  *ngFor="let clinic of clinics | async | SortByRatePipe:sortValue" class="row">
         <div class="col-md-7">
           <a href="#">
-            <img class="img-fluid rounded mb-3 mb-md-0" src="https://www.schn.health.nsw.gov.au/files/styles/header/public/images/headers/childrenscourtclinicparrweb.jpg?itok=-xl_OW9s" alt="">
+            <img width="700" height="300"class="img-fluid rounded mb-3 mb-md-0" src="{{clinic.imageSrc}}" alt="">
           </a>
         </div>
         <div class="col-md-5">
           <strong><h4 (click)="goToDetailPage(clinic)">{{clinic.name}}</h4></strong>
 <li><i class="fa fa-home"></i>{{clinic.address}}</li>
 
-    <li><i class="fa fa-home"></i>{{clinic.phonenumber}}<li>
+    <li>  <i class="fa fa-phone"></i> {{clinic.phonenumber}}<li>
 
-<li><i class="fa fa-home"></i>{{clinic.rate}}</li>
+<li>  <i class="fa fa-star"></i>{{clinic.rate}}</li>
 
+<<<<<<< HEAD
 <li><i class="fa fa-home"></i><a href="{{clinic.website}}">website</a></li>
+=======
+<li><i class="fa fa-globe"></i><a href="{{clinic.website}}">website</a></li>
+>>>>>>> master
 <br>
 
           <button class="favorite" (click)="addToBookmark(clinic)">Bookmark</button>

@@ -12,6 +12,7 @@ import { BookmarkComponent } from './bookmark/bookmark.component';
 import { PublicComponent } from './public/public.component';
 import { PrivateComponent } from './private/private.component';
 import { AdminAuthGuardService } from './admin-auth-guard.service';
+import { ForumComponent} from './forum/forum.component';
 
 const appRoutes: Routes = [
     {
@@ -47,14 +48,19 @@ const appRoutes: Routes = [
         path: 'bookmark',
         component: BookmarkComponent
     },
-    {   
+    {
         path: 'public',
         component: PublicComponent
     },
     {
         path: 'private',
         component: PrivateComponent
+    },
+    {
+        path: 'forum',
+        component: ForumComponent
     }
+
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);

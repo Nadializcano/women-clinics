@@ -24,6 +24,7 @@ import { PrivateComponent } from './private/private.component';
 import { AdminAuthGuardService } from './admin-auth-guard.service';
 import { AuthenticationService } from './authentication.service';
 import { UserService } from './user.service';
+import { ForumComponent } from './forum/forum.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -47,7 +48,8 @@ export const firebaseConfig = {
     HomeComponent,
     BookmarkComponent,
     PublicComponent,
-    PrivateComponent
+    PrivateComponent,
+    ForumComponent
   ],
   imports: [
     BrowserModule,
