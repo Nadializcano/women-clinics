@@ -22,9 +22,13 @@
 
   </div>
 
-
-<br>
+  <div *ngFor="let reference of references | async" class="row">
+  {{reference.title}}
 
 
 
   </div>
+</div>
+
+
+<br>
