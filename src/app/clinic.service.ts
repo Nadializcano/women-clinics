@@ -22,4 +22,14 @@ export class ClinicService {
     this.clinics.push(newClinic);
   }
 
+  updateClinic(localUpdatedClinic){
+    var clinicEntryInFirebase = this.getClinicById(localUpdatedClinic.$key);
+    clinicEntryInFirebase.update({name: localUpdatedClinic.name,
+                                  address: localUpdatedClinic.address,
+                                  phonenumber: localUpdatedClinic.phonenumber,
+                                  rate: localUpdatedClinic.rate,
+                                  website: localUpdatedClinic.website,
+                                  hours: localUpdatedClinic.hours});
+  }
+
 }
