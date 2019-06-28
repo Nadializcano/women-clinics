@@ -1,10 +1,5 @@
 
-{::options parse_block_html="true" /}
-
-<i class="fab fa-gitlab" style="color:rgb(107,79,187); font-size:.85em" aria-hidden="true"></i>&nbsp;&nbsp;
-Plan Buddy - [Register here][webcast-link]!
-&nbsp;&nbsp;<i class="fab fa-gitlab" style="color:rgb(107,79,187); font-size:.85em" aria-hidden="true"></i>
-{: .alert .alert-webcast}
+# Plan Buddy API![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
 
@@ -12,7 +7,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 
 ## Specifications
-{: .gitlab-purple}
+
 <details>
 <summary>Click Here for Details</summary>
 
@@ -31,7 +26,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 </div>
 </div>
-<.details>
+</details>
 
 
 ## Technical Features
