@@ -40,7 +40,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Contributors
 
 | [<img src="https://avatars1.githubusercontent.com/u/30783953?s=460&v=4" width=100 alt="GitHub avatar for author sarah">](https://github.com/sangel217) |  [<img src="https://avatars0.githubusercontent.com/u/41977094?s=400&v=4" width=100 alt="GitHub avatar for author nadia">](https://github.com/Nadializcano) | [<img src="https://avatars0.githubusercontent.com/u/39931977?s=400&v=4" width=100 alt="GitHub avatar for author Stephen">](https://github.com/step818) |  [<img src="https://avatars3.githubusercontent.com/u/42043965?s=180&v=4" width=100 alt="GitHub avatar for author mariia">](https://github.com/Marrri4ka) |
-|:-----:|:-----:|:-----:|:-----:|:-----:|
+|:-----:|:-----:|:-----:|:-----:|
 | [**sarah**](https://github.com/sangel217)| [**nadia**](https://github.com/Nadializcano) | [**sthephen**](https://github.com/step818) | [**marrri4ka**](https://github.com/Marrri4ka) |
 | Sarah | Nadia | Staphen| Mariia |
 
